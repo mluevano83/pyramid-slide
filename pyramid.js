@@ -1,11 +1,26 @@
-var symbol = $('#symbol');
-var height = $('#height');
 
-height.addEventListener('oninput')
-    heightStr = height.value;
-    heightInt = parseInt(heightStr);    
+var height = document.getElementById("height");
+var heightDisplay = $('#height-display');
+heightDisplay.append(height.value);
+getHeightAndDrawPyramid(height.value);
+
+height.oninput = function () {
+    console.log(height.value);
+    heightDisplay.empty();
+    $("#height-display").append(height.value);
+    getHeightAndDrawPyramid(height.value)
+}
+
+var symbol = $('#symbol');
+symbol.on('change', function() {
+    getHeightAndDrawPyramid(height.value)
+});
+
+function getHeightAndDrawPyramid(height) {
+    heightInt = parseInt(height);    
     drawPyramid(heightInt);
 }
+$("#height-display").append(height.value);
 
 function drawPyramid(height) {
     $("#pyramid").empty();
@@ -20,7 +35,7 @@ function drawPyramid(height) {
             rowStr += spaceChar;
         }
         for (var i = 0; i < numBricks; i++) {
-            rowStr += "#";
+            rowStr += $('#symbol option:selected').text();
         }
         rowElem = $("<p>").html(rowStr);
         $("#pyramid").append(rowElem);

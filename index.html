@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8"/>
     <link type=text/css rel=stylesheet href=styles.css>
     <link type=text/css rel=stylesheet href=normalize.css>
 </head>
 <body>
     <h1>Pyramid Slide</h1>
-    <form>
-        <div>Brick Symbol:
-            <select id="symbol">
-                <option value="#">#</option>
-                <option value="@">@</option>
-                <option value="X">X</option>
-                <option value="$">$</option>
-            </select>
-            How High?<input type="range" name="height" min="1" max="10">
-        </div>
-        <div id="pyramid"></div>
-    </form>
+    <table>
+        <td>Brick Symbol:</td>
+        <td><select id="symbol">
+            <option value="#">#</option>
+            <option value="@">@</option>
+            <option value="X">X</option>
+            <option value="$">$</option></td>
+        </select>
+        </td>
+        <td>How High?</td>
+        <td><input type="range" id="height" min="1" max="20" value="10" class="slider"></td>
+        <td><p id=height-display></p></td>
+    </table>
+    <div id="pyramid"></div>
     <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="pyramid.js"></script>
 </body>
