@@ -20,7 +20,6 @@ function getHeightAndDrawPyramid(height) {
     heightInt = parseInt(height);    
     drawPyramid(heightInt);
 }
-$("#height-display").append(height.value);
 
 function drawPyramid(height) {
     $("#pyramid").empty();

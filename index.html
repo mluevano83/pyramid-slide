@@ -7,20 +7,23 @@
 </head>
 <body>
     <h1>Pyramid Slide</h1>
-    <table>
-        <td>Brick Symbol:</td>
-        <td><select id="symbol">
-            <option value="#">#</option>
-            <option value="@">@</option>
-            <option value="X">X</option>
-            <option value="$">$</option></td>
-        </select>
-        </td>
-        <td>How High?</td>
-        <td><input type="range" id="height" min="1" max="20" value="10" class="slider"></td>
-        <td><p id=height-display></p></td>
-    </table>
-    <div id="pyramid"></div>
+    <div id = 'p-slide'>
+        <table>
+            <tr>
+            <td>Brick Symbol:</td>
+            <td><select id="symbol">
+                    <option value="#">#</option>
+                    <option value="@">@</option>
+                    <option value="X">X</option>
+                    <option value="$">$</option></td>
+                </select>
+                </td>
+                <td>How High?</td>
+                <td><input type="range" id="height" min="1" max="20" value="10" class="slider"></td>
+                <td><p id=height-display></p></td>
+        </table>
+        <div id="pyramid"></div>
+    </div>
     <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="pyramid.js"></script>
 </body>

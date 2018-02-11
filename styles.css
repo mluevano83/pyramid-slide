@@ -1,28 +1,33 @@
-h1 {
+body {
     text-align: center;
-    margin: 0px;
-    padding: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: LightSteelBlue;
+}
+
+h1 {
     color: white;
-    background-color:hotpink;
-    border: ;
-    border-radius: ;
-    font-size: ;
-    font-weight: ;
-    font-family: cursive;
+    background-color:deeppink;
+    font-size: large;
+    font-weight: bold;
+}
+#p-slide {
+    margin: auto;
+    width: 50%;
+    border: medium solid black;
+    padding :10px;
+    background-color: lightslategray;
 }
 
 table {
-    margin: ;
-    padding: 20px;
-    color: ;
-    background-color: #e3e8e7;
-    border: ;
-    border-radius: ;
-    font-size: ;
-    font-weight: ;
-    font-family: cursive;
+    text
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
 }
+
 #pyramid {
-    text-align: center;
-    
+    font-size: x-large;
+    font-weight: bold;
+    color: deeppink;
+    background-color: lightslategray;
 }
